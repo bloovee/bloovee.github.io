@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Project</title>
+</head>
+<body>
+
+  <!-- Single-line Comments -->
+  <!--
+    Multi-Line Comments #1 
+    Multi-Line Comments #2
+  -->
+
+<h2 id="practice_1">1. Embed Images</h2>
+    <h2><img src="img/salad.jpg" width="50px" height="auto">Salad</h2>
+    <ul>
+    <li>Greek Salad</li>
+    <li>Avocado Salad</li>
+    <li>Tomato Salad</li>
+    </ul>
+    <h2><img src="img/soup.jpg" width="50px">Soup</h2>
+    <ul>
+    <li>Minestrone</li>
+    <li>Clam Chowder</li>
+    <li>Corn Soup</li>
+    </ul> 
+<hr>
+
+<h2 id="practice_2">2. Hyperlinks</h2>
+<a href="https://www.google.com/">To Google</a>
+<br>
+<a href="test.html">To test.html</a>
+<br>
+<a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">To Google with a new tab</a>
+<hr>
+
+<h2 id="practice_3">3. Hyperlinks on Images</h2>
+<a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+<img src="img/search-icon.svg" alt="search">
+</a>
+<hr>
+
+<h2 id="practice_4">4. Hyperlinks on the Same Web Page</h2>
+<section id="section_1"  style="height:100vh;background-color:green">
+    <h3>Section 1</h3>
+    <a href="#section_2">Go to section 2</a>
+    </section>
+    <section id="section_2"  style="height:100vh;background-color:yellow">
+    <h3>Section 2</h3>
+    <a href="#section_1">Go to section 1</a>
+    </section>
+<hr>
+
+<h2 id="practice_5">5. List: Start Attribute</h2>
+<ol>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+    </ol>
+    <p>Count Again</p>
+    <ol start="4">
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+    </ol>
+<hr>
+
+<h2 id="practice_6">6. List: Change Marker Type</h2>
+<ol type="a">
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+</ol>
+<ol type="A">
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+</ol>
+<ol type="i">
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+</ol>
+<hr>
+
+<h2 id="practice_7">7. Nested List</h2>
+<ol>
+    <li>List</li>
+    <li>List</li>
+    <ul>
+        <li>List</li>
+        <li>List</li>
+    </ul>
+    <li>List</li>
+    <li>List</li>
+</ol>
+<hr>
+
+<h2 id="practice_8">8. Create Tables</h2>
+<table>
+  <tr>
+    <th>header</th>
+    <th>header</th>
+    <th>header</th>
+  </tr>
+  <tr>
+    <td>item</td>
+    <td>item</td>
+    <td>item</td>
+  </tr>
+  <tr>
+    <td>item</td>
+    <td>item</td>
+    <td>item</td>
+  </tr>
+</table>
+
+<style>
+th, td {
+background-color:lightblue;
+}
+</style>
+<hr>
+
+<h2 id="practice_9">9. Combine Table Cells Horizontally</h2>
+<table>
+  <tr>
+    <th>header</th>
+    <th>header</th>
+    <th>header</th>
+  </tr>
+  <tr>
+    <td>item</td>
+    <td colspan="2">item</td>
+  </tr>
+  <tr>
+    <td>item</td>
+    <td>item</td>
+    <td>item</td>
+  </tr>
+</table>
+<hr>
+
+<h2 id="practice_10">10. Combine Table Cells Vertically</h2>
+<table>
+  <tr>
+    <th>header</th>
+    <th>header</th>
+    <th>header</th>
+  </tr>
+  <tr>
+    <td>item</td>
+    <td rowspan="2">item</td>
+    <td>item</td>
+  </tr>
+  <tr>
+    <td>item</td>
+    <td>item</td>
+  </tr>
+</table>
+<hr>
+
+<h2 id="practice_11">11. Text Input Forms</h2>
+<form>
+    <input type="text" placeholder="username" name="username">
+    <input type="email" placeholder="email" name="email">
+    <textarea placeholder="comment" name="comment"></textarea>
+    <button type="submit">Send</button>
+</form>
+
+<style>
+input, textarea, button {
+display:block;
+}
+</style>
+<hr>
+
+<h2 id="practice_12">12. Radio Button</h2>
+<input type="radio" name=”color” value=”black”>Black
+<input type="radio" name=”color” value=”white” checked>White
+<hr>
+
+<h2 id="practice_13">13. Check Box</h2>
+<input type="checkbox" name=”color” value=”black”>Black
+<input type="checkbox" name=”color” value=”white” checked>White
+<hr>
+
+<h2 id="practice_14">14. Select Box</h2>
+<select name="selection">
+    <option value="item_a">Item A</option>
+    <option value="item_b">Item B</option>
+    <option value="item_c">Item C</option>
+</select>
+<hr>
+
+<h2 id="practice_15">15. Check Box with Label</h2>
+<input type="checkbox" id="black">
+<label for="black" style="font-size:30px">Black</label>
+<input type="checkbox" id="white">
+<label for="white" style="font-size:30px">White</label>
+<hr>
+
+<h2 id="practice_16">16. Embed Videos with Contoller</h2>
+<video controls width="365px">
+    <source src="video/video-1.mp4">
+</video>
+<hr>
+
+<h2 id="practice_17">17. Embed Videos: Autoplay and Loop</h2>
+<video controls autoplay muted loop width="365px">
+    <source src="video/video-1.mp4">
+</video>
+<hr>
+
+<h2 id="practice_18">18. Embed YouTube Video</h2>
+<iframe width="365" height="365" src="https://www.youtube.com/embed/jtQwSdfOymU" title="video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<hr>
+
+<h2 id="practice_19">19. Embed YouTube Video: Autoplay and Loop</h2>
+<iframe width="365" height="365" src="https://www.youtube.com/embed/jtQwSdfOymU?autoplay=1&mute=1&loop=1&playlist=jtQwSdfOymU&modestbranding=1" title="video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<hr>
+
+<h2 id="practice_20">20. Embed Google Map</h2>
+<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.31559343956!2d-74.26055200606874!3d40.69714775757918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sjp!4v1660273872361!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</body>
+</html>

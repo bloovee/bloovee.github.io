@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Practice</title>
+</head>
+<body>
+<div style="font-size:12px">
+<h1>CSS Practice</h1>
+<hr>
+<h2>font-size</h2>
+<h3>1. px: absolute size</h3>
+<p style="font-size:12px">font-size:12px</p>
+<p style="font-size:16px">font-size:16px</p>
+<p style="font-size:20px">font-size:20px</p>
+<h3>2. %: relative to the parent element's font size</h3>
+<p style="font-size:75%">font-size:75%</p>
+<p style="font-size:100%">font-size:100%</p>
+<p style="font-size:125%">font-size:125%</p>
+<h3>3. em: relative to the parent element's font size</h3>
+<p style="font-size:0.75em">font-size:0.75em</p>
+<p style="font-size:1em">font-size:1em</p>
+<p style="font-size:1.25em">font-size:1.25em</p>
+<h3>4. rem: relative to the root html element's font size</h3>
+<p style="font-size:0.75rem">font-size:0.75rem</p>
+<p style="font-size:1rem">font-size:1rem</p>
+<p style="font-size:1.25rem">font-size:1.25rem</p>
+<hr>
+<h2>color</h2>
+<h3>1. HEX</h3>
+<p style="font-size:20px; color:#0000ff">color:#0000ff</p>
+<h3>2. RGB</h3>
+<p style="font-size:20px; color: rgb(0,0,225)"> color:rgb(0,0,225)</p>
+<h3>3. RGBA</h3>
+<p style="font-size:20px; color: rgb(0,0,225,0.5)"> color:rgb(0,0,225,0.5)</p>
+<h3>4. Color name</h3>
+<p style="font-size:20px; color: blue"> color:blue</p>
+</div>
+<hr>
+<h2>font-family</h2>
+<h3>Hel</h3>
+<p style="font-family:Helvetica"> ABCDEFG - Helvetica</p>
+<p style="font-family:Arial"> ABCDEFG - Arial</p>
+<p style="font-family:sans-serif"> ABCDEFG - Sans-serif</p>
+<p style="font-family:'Times New Roman'"> ABCDEFG - Times New Roman</p>
+<p style="font-family:Georgia"> ABCDEFG - Georgia</p>
+<p style="font-family:Garamond"> ABCDEFG - Garamond</p>
+<p style="font-family:Monaco"> ABCDEFG - Monaco</p>
+<p style="font-family:Courier"> ABCDEFG - Courier</p>
+<p style="font-family:Menlo"> ABCDEFG - Menlo</p>
+
+
+<h3>Property Value Unit (Sizing Unit)</h3>
+<h2>Sizing Unit</h2>
+<h2></h2>
+<h2></h2>
+<h2></h2>
+<h2></h2>
+<h2></h2>
+<h2></h2>
+<h2></h2>
+<h2></h2>
+<h2></h2>
+<h2></h2>
+<h2></h2>
+<h2></h2>
+
+<h1> Lorem ipsum dolor sit amet, <span class="test"> consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
+
+<style>
+.test{
+    vertical-align:middle;
+    font-size:10px;
+}
+
+header, section{
+    background-color:orange;
+}
+
+section .primary{
+    background-color: red;
+}
+
+#main{
+    background-color: orange;
+}
+
+</style>
+
+<header class="primary">
+<p>xxxx<span> span </span>xxx</p>
+</header>
+
+<section>
+<p>xxxx<span> span </span>xxx</p>
+</section>
+
+<section id="main">
+<p class="primary">xxxx<span> span </span>xxx</p>
+</section>
+    
+
+<ul >
+    <li style="list-style:url(img/1.svg) inside upper-roman">TEST</li>
+    <li style="list-style-type:cjk-ideographic;">upper-roman</li>
+    <li style=list-style-type:lower-alpha;>lower-alpha</li>
+    <li style=list-style-type:upper-alpha;>upper-alpha</li>
+    <li style=list-style-type:decimal;>decimal</li>
+    <li style=list-style-type:georgian;>georgian</li>
+    <li style="list-style-image:url(img/cool.svg)">trad-chinese-informal</li>
+    <li>kannada</li>
+</ul>
+
+<style>
+
+body{
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h4{
+    text-align: center;
+
+    margin:5px;
+    height: 30px;
+}
+.container
+{
+    margin:0;
+    display:grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    width:100vw;
+    color:#2D2D2D;
+
+}
+
+.item{
+    padding:0px;
+    margin:2px;
+    background-color:#F7F7F7;
+    list-style-position: outside;
+    border-radius: 5px;
+}
+
+ul, ol{
+    margin:5px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+</style>
+
+
+<div class="container">
+
+<div class="item">
+<h4>disc</h4>
+<ul style="list-style-type:disc">
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+</ul>
+</div>
+
+<div class="item">
+<h4>circle</h4>
+<ul style="list-style-type:circle">
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+</ul>
+</div>
+
+<div class="item">
+<h4>square</h4>
+<ul style="list-style-type:square">
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+</ul>
+</div>
+
+<div class="item">
+<h4>decimal</h4>
+<ul style="list-style-type:decimal">
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+</ul>
+</div>
+
+<div class="item">
+<h4>decimal-leading-zero</h4>
+<ul style="list-style-type:decimal-leading-zero">
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+</ul>
+</div>
+
+<div class="item">
+<h4>lower-alpha</h4>
+<ul style="list-style-type:lower-alpha">
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+</ul>
+</div>
+
+<div class="item">
+<h4>upper-alpha</h4>
+<ul style="list-style-type:upper-alpha">
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+</ul>
+</div>
+
+<div class="item">
+<h4>lower-roman</h4>
+<ul style="list-style-type:lower-roman">
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+</ul>
+</div>
+
+<div class="item">
+<h4>upper-roman</h4>
+<ul style="list-style-type:upper-roman">
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+</ul>
+</div>
+
+<div class="item">
+<h4>lower-greek</h4>
+<ul style="list-style-type:lower-greek">
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+</ul>
+</div>
+
+<div class="item">
+<h4>upper-greek</h4>
+<ul style="list-style-type:upper-greek">
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+</ul>
+</div>
+
+<div class="item">
+<h4>lower-latin</h4>
+<ul style="list-style-type:lower-latin">
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+</ul>
+</div>
+
+<div class="item">
+<h4>upper-latin</h4>
+<ul style="list-style-type:upper-latin">
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+</ul>
+</div>
+
+<div class="item">
+<h4>georgian</h4>
+<ul style="list-style-type:georgian">
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+</ul>
+</div>
+
+<div class="item">
+<h4>hebrew</h4>
+<ul style="list-style-type:hebrew">
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+</ul>
+</div>
+
+<div class="item">
+<h4>cjk-ideographic</h4>
+<ul style="list-style-type:cjk-ideographic">
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+</ul>
+</div>
+
+<div class="item">
+<h4>hiragana</h4>
+<ul style="list-style-type:hiragana">
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+</ul>
+</div>
+
+<div class="item">
+<h4>katakana</h4>
+<ul style="list-style-type:katakana">
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+</ul>
+</div>
+
+<div class="item">
+    <h4>korean-hangul-formal</h4>
+    <ul style="list-style-type:korean-hangul-formal">
+        <li>xxxxxxxxx</li>
+        <li>xxxxxxxxx</li>
+        <li>xxxxxxxxx</li>
+    </ul>
+    </div>
+
+<div class="item">
+<h4>none</h4>
+<ul style="list-style-type:none">
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+    <li>xxxxxxxxx</li>
+</ul>
+</div>
+</div>
+
+</body>
+</html>

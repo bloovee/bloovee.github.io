@@ -1,0 +1,103 @@
+body{
+        margin: 0;
+        font-family: sans-serif;
+    }
+
+/* Navigation */
+header{
+    height: 50px;
+    display:flex;
+    align-items: center;
+    position: fixed;
+    top:0px;
+    width:95vw;
+    box-sizing: border-box;
+    z-index: 99;
+}
+
+.brand-logo{
+    display:block;
+    margin-left:20px;
+    margin-right:auto;
+    width:100px;
+}
+
+.navbar ul{
+    margin:0;
+    padding:0;
+    display:flex;
+}
+
+.navbar li{
+    list-style: none;
+    vertical-align: middle;
+    padding:5px 10px 3px 10px;
+    margin:0px 5px;
+}
+
+.nav-link{
+    color:#33bcc9;
+}
+
+.signup-button{
+    background:linear-gradient(180deg, #0099C9 0%, #007094 100%);
+    color:rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.login-button{
+    background-color: white; border-width: 2px;
+    border-style: solid;
+    border-color: #33bcc9; border-radius: 10%;
+    color:#33bcc9;
+}
+
+/* End Navigation */
+
+.bg-container{
+    position:relative;
+    z-index: 90;
+}
+
+.bg-img{
+    height:100vh;
+    width: auto; 
+    background-size:contain; 
+    overflow-x:hidden;
+}
+
+.msg-container{
+    position:absolute;
+    left:30%;
+    padding-left: 10%;
+    background-color: rgba(255, 255, 255, 0.7);border-radius: 20px; 
+}
+
+.msg{
+    font-weight:bold;
+    font-size:calc(min(max(2rem,4vw),4rem));
+}
+
+.bg-msg-1{
+    background: linear-gradient(90deg, #0d4503 0%, #92fb4c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.bg-msg-2{
+    background: linear-gradient(90deg, #c93c00 0%, #df8724 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.bg-msg-3{
+    background: linear-gradient(90deg, #0c0096 0%, #00c8ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}

@@ -1,0 +1,139 @@
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+        margin: 0;
+        font-family: sans-serif;
+    }
+
+/* Navigation */
+header{
+    background-color: rgb(255, 255, 255,0.5);
+    height: 50px;
+    display:flex;
+    align-items: center;
+    position: fixed;
+    top:0px;
+    width:100vw;
+    padding-right: 2%;
+    box-sizing: border-box;
+    z-index: 99;
+}
+
+.brand-logo{
+    display:block;
+    margin-left:20px;
+    margin-right:auto;
+    width:100px;
+}
+
+.navbar ul{
+    margin:0;
+    padding:0;
+    display:flex;
+}
+
+.navbar li{
+    list-style: none;
+    vertical-align: middle;
+    padding:5px 10px 3px 10px;
+    margin:0px 5px;
+}
+
+.nav-link{
+    color:#0093a0;
+}
+
+.signup-button{
+    background:linear-gradient(180deg, #0099C9 0%, #007094 100%);
+    color:rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.login-button{
+    background-color: white; border-width: 2px;
+    border-style: solid;
+    border-color: #33bcc9; border-radius: 10%;
+    color:#33bcc9;
+}
+
+/* End Navigation */
+
+.container{
+scroll-snap-type:y mandatory;
+}
+
+.bg-container{
+    height:100vh;
+    width:auto;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    z-index: 90;
+    scroll-snap-align: start;
+}
+
+.msg-container{
+    text-decoration: none;
+    width:70%;
+    min-width: 300px;
+    margin:auto;
+    padding:5%;
+    display:flex;
+    flex-direction: column;
+    flex:1;
+}
+
+.msg{
+    text-align: center;
+    margin:0;
+    padding: 5%;
+    font-weight:bold;
+    font-size:calc(min(max(2rem,4vw),4rem));
+}
+
+.msg-sub{
+    display:block;
+    font-weight: normal; 
+    margin:0;
+    padding: 5%;
+    font-size:calc(min(max(0.7rem,1vw),1rem));
+}
+
+.bg-1{
+    background-image: url("img/landing_bg_1.png");
+}
+
+.bg-msg-1{
+    background: linear-gradient(90deg, #e7ffe3 0%, #92fb4c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.bg-2{
+    background-image: url("img/landing_bg_2.png");
+}
+
+.bg-msg-2{
+    background: linear-gradient(90deg, #ffffff 0%, #fffb15 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.bg-3{
+    background-image: url('img/landing_bg_3.png');
+}
+
+.bg-msg-3{
+    background: linear-gradient(90deg, #d8ecff 0%, #1e61ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
